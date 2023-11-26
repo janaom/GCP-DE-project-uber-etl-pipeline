@@ -65,4 +65,9 @@ Then we need to transform the data: chose Transformer -> Python -> Generic (no t
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/39995cd8-b34d-42b7-b605-566e5b4efbbb)
 
+Run uber_transformation block
+
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/76893241-b06a-4862-ae7a-1bdf22a85859)
+
+
 
