@@ -53,10 +53,13 @@ To open Mage UI: External IP address:6789
 
 Open Mage UI, choose Data loader -> Python -> API
 
-Copy URL of your csv 
+Copy URL of your csv, add it to the mage code: @data_loader url = ' '
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/9d125cee-63f2-4802-a7a4-b75f0be9bc63)
 
+Run the block, load the data from GCS
+
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/e5e01438-4a74-4e12-b0bc-f037f6b42d74)
 
 
 
