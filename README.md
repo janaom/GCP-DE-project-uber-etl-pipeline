@@ -97,3 +97,11 @@ Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables t
 Create a new table by running `sql_query.sql`
 
 ## Looker
+
+Open lookerstudio.google.com. Connect Looker to your BQ
+
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/82995f76-8610-474f-870a-79fdf5c410d2)
+
+Create a dashboard
+
+https://lookerstudio.google.com/reporting/dccd14cc-af9d-4c60-a58c-7886ac6558eb/page/zyOjD?s=ihSRd0rI6io
