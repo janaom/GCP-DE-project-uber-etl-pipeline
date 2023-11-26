@@ -49,4 +49,14 @@ Create a new firewall rule for the port 6789
 
 To open Mage UI: External IP address:6789
 
+## Mage
+
+Open Mage UI, choose Data loader -> Python -> API
+
+Copy URL of your csv 
+
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/9d125cee-63f2-4802-a7a4-b75f0be9bc63)
+
+
+
 
