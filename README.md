@@ -92,3 +92,6 @@ Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables t
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/91b1924e-412b-471d-ae28-4d8b0769cfee)
 
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/b265a460-45fa-423a-b5ee-50cc6277a293)
+
+
