@@ -41,7 +41,7 @@ Run this to install Google Cloud Library: `sudo pip3 install google-cloud`
 
 Run this to install [Mage](https://github.com/mage-ai/mage-ai#%EF%B8%8F-install) on your VM: `sudo pip3 install mage-ai`
 
-To start a new Mage project: `mage start de-uber-project` (you will see: `Checking port 6789...`)
+To start a new Mage project: `mage start de-uber-project` (you will see: `Checking port 6789...` if you restart Mage, the port may change e.g. `Checking port 6790...`)
 
 Create a new firewall rule for the port 6789
 
