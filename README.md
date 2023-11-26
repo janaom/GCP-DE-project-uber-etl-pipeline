@@ -51,6 +51,8 @@ To open Mage UI: External IP address:6789
 
 ## Mage
 
+### load_uber_data
+
 Open Mage UI, choose Data loader -> Python -> API
 
 Copy URL of your csv, add it to the mage code: @data_loader url = ' '
@@ -61,6 +63,8 @@ Run the block, load the data from GCS
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/e5e01438-4a74-4e12-b0bc-f037f6b42d74)
 
+### uber_transformation
+
 Then we need to transform the data: chose Transformer -> Python -> Generic (no template)
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/39995cd8-b34d-42b7-b605-566e5b4efbbb)
@@ -69,5 +73,14 @@ Run uber_transformation block
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/76893241-b06a-4862-ae7a-1bdf22a85859)
 
+### uber_bigquery_load
 
+Chose Data exporter -> Python -> Google BigQuery
+
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/c714ee7d-5de3-4e8a-b83e-40e12c1ebd0f)
+
+Go to API & Services on GCP, create a new Service account from Credentials. Give a BigQuery Admin role to your new SA. Then create a new key in json format for this SA.
+Copy/paste info from your json key to io_config.yaml
+
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/27f5b21a-769c-47ea-b03a-89cb20cec313)
 
