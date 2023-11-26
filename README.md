@@ -102,6 +102,4 @@ Open lookerstudio.google.com. Connect Looker to your BQ
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/82995f76-8610-474f-870a-79fdf5c410d2)
 
-Create a dashboard
-
-[Looker Dashboard](https://lookerstudio.google.com/s/twWLPhtdgPI)
+Create a dashboard. Here is an example of my [Looker Dashboard](https://lookerstudio.google.com/s/twWLPhtdgPI).
