@@ -14,7 +14,7 @@ Then edit the access of the csv file:
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/38b135a9-1b16-4e15-b082-0aecc5942c30)
 
 
-# Compute Engine
+## Compute Engine
 
 Create a new instance, e.g. Machine type: e2-standard-4
 
@@ -61,5 +61,8 @@ Run the block, load the data from GCS
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/e5e01438-4a74-4e12-b0bc-f037f6b42d74)
 
+Then we need to transform the data: chose Transformer -> Python -> Generic (no template)
+
+![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/39995cd8-b34d-42b7-b605-566e5b4efbbb)
 
 
