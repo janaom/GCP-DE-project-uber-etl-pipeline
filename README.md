@@ -2,7 +2,7 @@
 
 
 
-## GCS 🪣
+# GCS 🪣
 
 Create a new bucket, upload the csv file. Change the permissions of the bucket (permissions -> edit access control -> Fine-grained).
 Then edit the access of the csv file:
@@ -12,7 +12,7 @@ Then edit the access of the csv file:
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/38b135a9-1b16-4e15-b082-0aecc5942c30)
 
 
-## Compute Engine 💽
+# Compute Engine 💽
 
 Create a new instance, e.g. Machine type: e2-standard-4
 
@@ -48,9 +48,9 @@ Create a new firewall rule for the port 6789
 
 To open Mage UI: `External-IP-address:6789`
 
-## Mage 🧙
+# Mage 🧙
 
-### load_uber_data
+## load_uber_data
 
 Open Mage UI, select Data loader -> Python -> API
 
@@ -62,7 +62,7 @@ Run the block, load the data from GCS
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/e5e01438-4a74-4e12-b0bc-f037f6b42d74)
 
-### uber_transformation
+## uber_transformation
 
 Transform the data: select Transformer -> Python -> Generic (no template)
 
@@ -72,7 +72,7 @@ Run uber_transformation block
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/76893241-b06a-4862-ae7a-1bdf22a85859)
 
-### uber_bigquery_load
+## uber_bigquery_load
 
 Select Data exporter -> Python -> Google BigQuery
 
@@ -83,7 +83,7 @@ Copy/paste info from your json key to `io_config.yaml`
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/27f5b21a-769c-47ea-b03a-89cb20cec313)
 
-## BigQuery ❔
+# BigQuery ❔
 
 Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables to BQ.
 
@@ -95,7 +95,7 @@ Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables t
 
 Create a new table by running sql code from `sql_query.sql`
 
-## Looker 📈
+# Looker 📈
 
 Open lookerstudio.google.com. Connect Looker to your BQ.
 
