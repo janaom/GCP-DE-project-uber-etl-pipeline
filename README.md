@@ -1,5 +1,13 @@
+# GCP Data Engineering project
 
+In this project you will analize the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. The NYC TLC provides trip records for yellow taxis, green taxis, for-hire vehicles (such as Uber and Lyft) from 2009-present. For any questions about fields names check `data_dictionary_trip_records_yellow.pdf`. 
 
+We will use: 
+  - Google Cloud Storage
+  - Compute Engine
+  - Mage
+  - BigQuery
+  - Looker
 
 
 # GCS 🪣
