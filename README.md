@@ -1,8 +1,6 @@
 
 
-Video can be found on the [mage.ai](https://docs.mage.ai/guides/community-examples)
 
-You can create an Uber Data Model on lucid.app
 
 ## GCS
 
@@ -18,7 +16,7 @@ Then edit the access of the csv file:
 
 Create a new instance, e.g. Machine type: e2-standard-4
 
-SSH into your VM and run these commands to install Python and pip 
+SSH into your VM and run these commands to install Python, pip, wget, pandas, Google Cloud Library, Google Cloud BigQuery library 
 
 `sudo apt-get install update`
 
@@ -32,14 +30,14 @@ SSH into your VM and run these commands to install Python and pip
 
 `sudo python3 get-pip.py`
 
-Run this to install pandas: `sudo pip3 install pandas`
+`sudo pip3 install pandas`
 
-Run this to install Google Cloud Library: `sudo pip3 install google-cloud`
+`sudo pip3 install google-cloud`
 
 `sudo pip3 install google-cloud-bigquery`
 
 
-Run this to install [Mage](https://github.com/mage-ai/mage-ai#%EF%B8%8F-install) on your VM: `sudo pip3 install mage-ai`
+Run `sudo pip3 install mage-ai` to install [Mage](https://github.com/mage-ai/mage-ai#%EF%B8%8F-install) on your VM.
 
 To start a new Mage project: `mage start de-uber-project` (you will see: `Checking port 6789...` if you restart Mage, the port may change e.g. `Checking port 6790...`)
 
@@ -48,17 +46,15 @@ Create a new firewall rule for the port 6789
 <img width="561" alt="image" src="https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/5e2344e7-69d4-4e11-aa89-d9ed23888e1f">
 
 
-![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/579a044b-dd87-4f45-8807-bec24a173fce)
-
-To open Mage UI: External IP address:6789
+To open Mage UI: `External-IP-address:6789`
 
 ## Mage
 
 ### load_uber_data
 
-Open Mage UI, choose Data loader -> Python -> API
+Open Mage UI, select Data loader -> Python -> API
 
-Copy URL of your csv, add it to the mage code: @data_loader url = ' '
+Copy URL of your csv file, add it to the mage code: @data_loader url = ' '
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/9d125cee-63f2-4802-a7a4-b75f0be9bc63)
 
@@ -68,7 +64,7 @@ Run the block, load the data from GCS
 
 ### uber_transformation
 
-Then we need to transform the data: chose Transformer -> Python -> Generic (no template)
+Transform the data: select Transformer -> Python -> Generic (no template)
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/39995cd8-b34d-42b7-b605-566e5b4efbbb)
 
@@ -78,12 +74,12 @@ Run uber_transformation block
 
 ### uber_bigquery_load
 
-Chose Data exporter -> Python -> Google BigQuery
+Select Data exporter -> Python -> Google BigQuery
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/c714ee7d-5de3-4e8a-b83e-40e12c1ebd0f)
 
-Go to API & Services on GCP, create a new Service account from Credentials. Give a BigQuery Admin role to your new SA. Then create a new key in json format for this SA.
-Copy/paste info from your json key to io_config.yaml
+Go to API & Services on GCP, create a new Service account from Credentials, assign BigQuery Admin role. Create a new key in json format for this SA.
+Copy/paste info from your json key to `io_config.yaml`
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/27f5b21a-769c-47ea-b03a-89cb20cec313)
 
@@ -97,12 +93,10 @@ Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables t
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/b265a460-45fa-423a-b5ee-50cc6277a293)
 
-Create a new table by running `sql_query.sql`
+Create a new table by running sql code from `sql_query.sql`
 
 ## Looker
 
-Open lookerstudio.google.com. Connect Looker to your BQ
-
-![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/82995f76-8610-474f-870a-79fdf5c410d2)
+Open lookerstudio.google.com. Connect Looker to your BQ.
 
 Create a dashboard. Here is an example of my [Looker Dashboard](https://lookerstudio.google.com/s/twWLPhtdgPI).
