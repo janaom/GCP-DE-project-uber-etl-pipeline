@@ -7,6 +7,8 @@ In this project, we will use various technologies and tools to analyze the TLC T
 
 - Cloud Storage 🪣 to store and manage the trip record data
 
+- Compute Engine 💽 to host and run the Mage 
+
 - Mage 🧙‍♂️ for Extract, Transform, Load (ETL) processes
 
 - BigQuery 🔍 as our data warehouse for storing and querying the transformed trip record data
