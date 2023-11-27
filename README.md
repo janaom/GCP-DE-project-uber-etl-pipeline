@@ -22,6 +22,7 @@ The analysis of the TLC Trip Record Data will be conducted using the following t
 Additionally, a key objective of this project is to gain familiarity with the Mage tool. Mage offers an alternative approach to Airflow for managing ETL workflows and will be the primary tool used to orchestrate the data pipeline.
 
 
+
 ![image](https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/6cada155-6df3-4497-8410-ab0d9f4d0b09)
 
 
