@@ -1,13 +1,19 @@
 # GCP Data Engineering project
 
-In this project you will analize the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. The NYC TLC provides trip records for yellow taxis, green taxis, for-hire vehicles (such as Uber and Lyft) from 2009-present. For any questions about fields names check `data_dictionary_trip_records_yellow.pdf`. 
+In this project you will analize the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. To understand the data and its fields, please refer to the data dictionary provided by the TLC (`data_dictionary_trip_records_yellow.pdf`). 
 
-We will use: 
-  - Google Cloud Storage
-  - Compute Engine
-  - Mage
-  - BigQuery
-  - Looker
+In this project, we will utilize various technologies and tools to analyze the TLC Trip Record Data:
+
+    Cloud Storage 🪣 We will leverage Cloud Storage to store and manage the trip record data. Cloud Storage provides a scalable and reliable storage solution for large datasets.
+
+    Mage 🧙‍♂️ Mage will be used for Extract, Transform, Load (ETL) processes. Mage is an alternative to Airflow and will help us efficiently extract data from the source, apply transformations, and load it into our target data warehouse.
+
+    BigQuery 🔍 We will use BigQuery as our data warehouse for storing and querying the transformed trip record data. BigQuery offers powerful analytical capabilities and allows for fast and scalable data analysis.
+
+    Looker📈 Looker will be our business intelligence and data visualization platform. It will enable us to create interactive dashboards, explore the data, and derive meaningful insights from the TLC trip record data.
+
+Additionally, it is important to note that one of the main purposes of this project is to gain familiarity with the Mage tool. Mage provides an alternative approach to Airflow for managing ETL workflows and will be the primary tool used for orchestrating the data pipeline in this project.
+
 
 ![image](https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/6cada155-6df3-4497-8410-ab0d9f4d0b09)
 
