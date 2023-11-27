@@ -9,6 +9,8 @@ We will use:
   - BigQuery
   - Looker
 
+![image](https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/6cada155-6df3-4497-8410-ab0d9f4d0b09)
+
 
 # GCS 🪣
 
