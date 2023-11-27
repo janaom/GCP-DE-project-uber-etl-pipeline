@@ -45,6 +45,9 @@ To start a new Mage project: `mage start de-uber-project` (you will see: `Checki
 
 Create a new firewall rule for the port 6789
 
+<img width="561" alt="image" src="https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/5e2344e7-69d4-4e11-aa89-d9ed23888e1f">
+
+
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/579a044b-dd87-4f45-8807-bec24a173fce)
 
 To open Mage UI: External IP address:6789
