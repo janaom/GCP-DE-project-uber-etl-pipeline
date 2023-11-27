@@ -4,14 +4,14 @@ In this project you will analize the [TLC Trip Record Data](https://www.nyc.gov/
 
 In this project, we will utilize various technologies and tools to analyze the TLC Trip Record Data:
 
-    - Cloud Storage 🪣 We will leverage Cloud Storage to store and manage the trip record data. Cloud Storage provides a scalable and reliable storage solution for large datasets.
+    - Cloud Storage 🪣 to store and manage the trip record data
 
-    - Mage 🧙‍♂️ Mage will be used for Extract, Transform, Load (ETL) processes. Mage is an alternative to Airflow and will help us efficiently extract data from the source, apply transformations, and load it into our target data warehouse.
+    - Mage 🧙‍♂️ for Extract, Transform, Load (ETL) processes
 
-    - BigQuery 🔍 We will use BigQuery as our data warehouse for storing and querying the transformed trip record data. BigQuery offers powerful analytical capabilities and allows for fast and scalable data analysis.
+    - BigQuery 🔍 as our data warehouse for storing and querying the transformed trip record data
 
-    - Looker📈 Looker will be our business intelligence and data visualization platform. It will enable us to create interactive dashboards, explore the data, and derive meaningful insights from the TLC trip record data.
-
+    - Looker📈 as our business intelligence and data visualization platform
+    
 Additionally, it is important to note that one of the main purposes of this project is to gain familiarity with the Mage tool. Mage provides an alternative approach to Airflow for managing ETL workflows and will be the primary tool used for orchestrating the data pipeline in this project.
 
 
