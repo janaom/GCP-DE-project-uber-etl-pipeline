@@ -2,7 +2,9 @@
 
 In this project you will analize the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. To understand the data and its fields, please refer to the data dictionary provided by the TLC (`data_dictionary_trip_records_yellow.pdf`). 
 
+
 In this project, we will use various technologies and tools to analyze the TLC Trip Record Data:
+
 
 
 - Cloud Storage 🪣 to store and manage the trip record data
@@ -14,6 +16,7 @@ In this project, we will use various technologies and tools to analyze the TLC T
 - BigQuery 🔍 as our data warehouse for storing and querying the transformed trip record data
 
 - Looker📈 as our business intelligence and data visualization platform
+
 
     
 Additionally, it is important to note that one of the main purposes of this project is to gain familiarity with the Mage tool. Mage provides an alternative approach to Airflow for managing ETL workflows and will be the primary tool used for orchestrating the data pipeline in this project.
