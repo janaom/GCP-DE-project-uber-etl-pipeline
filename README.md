@@ -1,9 +1,9 @@
 # GCP Data Engineering project
 
-In this project you will analize the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. To understand the data and its fields, please refer to the data dictionary provided by the TLC (`data_dictionary_trip_records_yellow.pdf`). 
+The purpose of this project is to analyze the [TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts. To understand the data and its fields, please refer to the data dictionary provided by the TLC (`data_dictionary_trip_records_yellow.pdf`). 
 
 
-In this project, we will use various technologies and tools to analyze the TLC Trip Record Data:
+The analysis of the TLC Trip Record Data will be conducted using the following technologies and tools:
 
 
 
@@ -19,7 +19,7 @@ In this project, we will use various technologies and tools to analyze the TLC T
 
 
     
-Additionally, it is important to note that one of the main purposes of this project is to gain familiarity with the Mage tool. Mage provides an alternative approach to Airflow for managing ETL workflows and will be the primary tool used for orchestrating the data pipeline in this project.
+Additionally, a key objective of this project is to gain familiarity with the Mage tool. Mage offers an alternative approach to Airflow for managing ETL workflows and will be the primary tool used to orchestrate the data pipeline.
 
 
 ![image](https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/6cada155-6df3-4497-8410-ab0d9f4d0b09)
@@ -27,8 +27,7 @@ Additionally, it is important to note that one of the main purposes of this proj
 
 # GCS 🪣
 
-Create a new bucket, upload the csv file. Change the permissions of the bucket (permissions -> edit access control -> Fine-grained).
-Then edit the access of the csv file:
+Create a new bucket, upload the csv file. Change the permissions of the bucket (permissions -> edit access control -> Fine-grained), edit the access of the csv file to make it publicly available
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/66511ae3-9543-4d96-b6d9-22f8a6ac1483)
 
@@ -71,13 +70,14 @@ Create a new firewall rule for the port 6789
 
 To open Mage UI: `External-IP-address:6789`
 
+
 # Mage 🧙
 
 ## load_uber_data
 
 Open Mage UI, select Data loader -> Python -> API
 
-Copy URL of your csv file, add it to the mage code: @data_loader url = ' '
+Copy URL of your csv file, add it to the Mage code: @data_loader url = ' '
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/9d125cee-63f2-4802-a7a4-b75f0be9bc63)
 
@@ -101,14 +101,15 @@ Select Data exporter -> Python -> Google BigQuery
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/c714ee7d-5de3-4e8a-b83e-40e12c1ebd0f)
 
-Go to API & Services on GCP, create a new Service account from Credentials, assign BigQuery Admin role. Create a new key in json format for this SA.
-Copy/paste info from your json key to `io_config.yaml`
+Go to API & Services on GCP, create a new Service account from the Credentials section, assign the BigQuery Admin role to the SA. Create a new key in JSON format for this SA.
+Copy and paste the information from your JSON key into the `io_config.yaml` file
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/27f5b21a-769c-47ea-b03a-89cb20cec313)
 
+
 # BigQuery 🔍
 
-Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables to BQ.
+Create a Dataset in BQ, run uber_bigquery_load block. Load all tables to BQ.
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/829677c2-d407-4726-830a-a1d86ceea3d6)
 
@@ -117,6 +118,7 @@ Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables t
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/b265a460-45fa-423a-b5ee-50cc6277a293)
 
 Create a new table by running sql code from `sql_query.sql`
+
 
 # Looker 📈
 
