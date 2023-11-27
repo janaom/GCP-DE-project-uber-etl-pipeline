@@ -83,7 +83,7 @@ Copy/paste info from your json key to `io_config.yaml`
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/27f5b21a-769c-47ea-b03a-89cb20cec313)
 
-# BigQuery ❔
+# BigQuery 🔍
 
 Create a Dataset in BQ, run uber_bigquery_load block. You will load all tables to BQ.
 
