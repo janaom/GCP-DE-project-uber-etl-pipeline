@@ -76,7 +76,7 @@ To open Mage UI: `External-IP-address:6789`
 
 ## load_uber_data
 
-Open Mage UI, select Data loader -> Python -> API
+Open Mage UI, select `Data loader -> Python -> API`
 
 Copy URL of your csv file, add it to the Mage code: @data_loader url = ' '
 
@@ -88,7 +88,7 @@ Run the block, load the data from GCS
 
 ## uber_transformation
 
-Transform the data: select Transformer -> Python -> Generic (no template)
+Transform the data: select `Transformer -> Python -> Generic (no template)`
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/39995cd8-b34d-42b7-b605-566e5b4efbbb)
 
@@ -98,7 +98,7 @@ Run uber_transformation block
 
 ## uber_bigquery_load
 
-Select Data exporter -> Python -> Google BigQuery
+Select `Data exporter -> Python -> Google BigQuery`
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/c714ee7d-5de3-4e8a-b83e-40e12c1ebd0f)
 
