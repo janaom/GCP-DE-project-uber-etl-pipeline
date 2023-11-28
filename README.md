@@ -25,6 +25,7 @@ The analysis of the TLC Trip Record Data will be conducted using the following t
 
 ![image](https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/6cada155-6df3-4497-8410-ab0d9f4d0b09)
 
+<img width="471" alt="image" src="https://github.com/janaom/GCP-DE-project-uber-etl-pipeline/assets/83917694/126e73f5-053a-4287-9266-88f562570c14">
 
 
 # GCS 🪣
