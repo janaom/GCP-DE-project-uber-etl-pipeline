@@ -107,7 +107,7 @@ Select `Data exporter -> Python -> Google BigQuery`
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/c714ee7d-5de3-4e8a-b83e-40e12c1ebd0f)
 
 Go to API & Services on GCP, create a new Service account from the Credentials section, assign the BigQuery Admin role to the SA. Create a new key in JSON format for this SA.
-Copy and paste the information from your JSON key into the `io_config.yaml` file
+Copy and paste the information from your JSON key into the `io_config.yaml` file.
 
 ![image](https://github.com/janaom/GCP_DE_project_uber_etl_pipeline/assets/83917694/27f5b21a-769c-47ea-b03a-89cb20cec313)
 
